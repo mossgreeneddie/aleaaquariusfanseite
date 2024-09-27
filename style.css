@@ -1,0 +1,173 @@
+@font-face {
+    font-family: LinLib;
+    src: url("https://file.garden/ZXYYlmMYuz15fq8m/fonts/linux_libertine/LinLibertine_R.ttf");
+}
+
+@font-face {
+    font-family: Wavetosh;
+    src: url("https://file.garden/ZXYYlmMYuz15fq8m/fonts/wavetosh/Wavetosh.ttf");
+}
+
+@font-face {
+    font-family: curse;
+    src: url("https://file.garden/ZXYYlmMYuz15fq8m/fonts/cursive-sans/CursiveSans-Book.ttf");
+}
+
+:root {
+    --bodyfont: LinLib;
+    --headerfont: curse;
+ 
+    --color:#74B3CE;
+    --sub: #508991;
+    --block:#172A3A;
+ 
+    --link:#00ff4c;
+    --linkhover:#355d3a;
+
+    --head: #8a9a5b;
+}
+ 
+* { 
+    margin:0;
+    padding:0; 
+    scrollbar-width: thin;
+    scrollbar-color: var(--head) var(--block) ;
+}
+
+html{
+    font-family: var(--bodyfont);
+    background-color: var(--sub);
+    color: var(--color);
+    background-image: url("https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/grafik.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1,h2,h3,h4,h5,h6,h7{
+    font-family: var(--headerfont);
+    color: var(--head);
+    border-bottom: 1px solid var(--color);
+}
+
+h1{
+    font-family: Wavetosh;
+    font-size: 60px;
+    text-align: center;
+}
+
+a{
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--linkhover);
+    background-color: var(--color);
+}
+
+.div img{
+    max-width:100%;
+}
+
+.sidebar-element ul{
+    list-style: none;
+    padding: 10px;
+}
+
+.sidebar-element li{
+    margin-bottom: 5px;
+}
+
+.sidebar-element, .main-element{
+    padding:10px;
+    margin-bottom: 10px;
+}
+
+.sidebar-element, .main-element{
+    background-color: var(--block);
+}
+
+.title-image{
+    z-index: 1;
+}
+
+.eins{
+    max-height: 200px ;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zwei{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genbutton{
+    border: 3px solid var(--color);
+    width: fit-content;
+    padding: 1%;
+    background-color: var(--block);
+    color: var(--color);
+    transition: all 0.5s;
+}
+
+.genbutton:hover{
+    background-color: var(--color);
+    color: var(--block);
+    user-select: none;
+}
+
+.genspace{
+    border-bottom: 3px solid var(--link);
+    padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+    #container {
+        width:1000px;
+        margin:1vh auto;
+        display:flex;
+        gap:10px;
+    }
+
+    #main {
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap:10px;
+        max-width: 700px;
+    }
+
+    .ganz{
+        width: 100%;
+    }
+
+    #sidebar{
+        max-width: 300px;
+    }
+
+    .halb{
+        width: 47%;
+        overflow-y: auto;
+    }
+  
+    .drittel{
+        width: 30%;
+        overflow-y: auto;
+    }
+
+    .überhalb, .überdrittel{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-height: 400px;
+    }
+
+
+ }
