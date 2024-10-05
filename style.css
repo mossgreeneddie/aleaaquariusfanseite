@@ -115,6 +115,7 @@ a:hover{
     background-color: var(--block);
     color: var(--color);
     transition: all 0.5s;
+    margin: 5px;
 }
 
 .genbutton:hover{

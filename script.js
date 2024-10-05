@@ -1,4 +1,3 @@
-/* Hello everyone! If you're wondering how I made this small function, I simply made two arrays. One of the arrays contained a list of alphabetas, while the other contained a list of names. Then, I wrote a function to choose one random alphabeta and one random name and then put them together. I hope you enjoy using the Random Name Generator! */
 /*Magische*/
 var magisch = [
     'eine Finde-Finja',
@@ -192,4 +191,36 @@ var list;
 
 function cru() {
  document.getElementById("alpha").innerHTML = "Dein "+ alphabeta[Math.floor(Math.random() * alphabeta.length)] + " Name könnte " + star[Math.floor(Math.random() * star.length)] + " sein!";;;
+}
+
+/*Buchnamen (for fun)*/
+
+var buchtitel1 = [
+	'Der Ruf',
+	'Die Farben',
+	'Das Geheimnis',
+	'Die Macht',
+	'Die Botschaft',
+	'Der Fluss',
+	'Im Bannkreis',
+	'Die Wellen',
+	'Der Gesang',
+    'Das Vermächtnis',
+] 
+var buchtitel2 = [
+	'des Wassers',
+	'des Meeres',
+	'der Ozeane',
+	'der Gezeiten',
+	'des Regens',
+	'des Vergessens',
+	'des Schwurs',
+	'der Zeit',
+	'der Wale',
+    'der Meerkinder',
+]
+var list;
+
+function ranbuchname() {
+ document.getElementById("büch").innerHTML =  buchtitel1[Math.floor(Math.random() * buchtitel1.length)] + " " + buchtitel2[Math.floor(Math.random() * buchtitel2.length)];;;
 }
