@@ -1,0 +1,109 @@
+:root{
+    --ten: #60EFFF;
+    --thirty: #15ff00;
+    --sixty: #2c363d;
+    --light: #bfff57;
+    --dark: #1e1a33;
+}
+
+*{
+    scrollbar-color: var(--ten) var(--sixty);
+    scrollbar-width: thin;
+    font-size: larger;
+}
+
+html{
+    color: var(--light);
+    font-family: monospace;
+    background-color: var(--dark);
+}
+
+br{
+    margin: 10px;
+}
+
+.over{
+    display: flex;
+    justify-content: center;
+}
+
+.all {
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--sixty);
+    border-right: 3px solid var(--ten);
+    box-shadow: 10px 10px 25px var(--dark);
+    padding-left: 100px ;
+}
+
+a{
+    color: var(--thirty);
+    transition: color 1s, text-shadow 1s;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--light);
+    text-shadow: 0px 0px 8px var(--ten);
+}
+
+.main{
+    width: 100%;
+    padding: 4%;
+}
+
+iframe{
+    width: 100%;
+    border: none;
+    height: 80vh;
+    border-top: 3px solid var(--ten);
+    border-bottom: 3px solid var(--ten);
+}
+
+.stick{
+    position: sticky;
+    top: 90%;
+    left: 2%;
+    padding: 10px;
+    width: fit-content;
+    border-right: 2px solid var(--ten);
+    border-left: 2px solid var(--ten);
+    background-color: var(--sixty);
+}
+
+.toper{
+    display: flex-box;
+}
+
+
+label {
+    color: var(--thirty);
+    padding: 1px 5px;
+    border-radius: 3px;
+    margin: 4px;
+    background: var(--sixty);
+}
+
+input { 
+    appearance: none;
+    border: 1px inset var(--dark);
+    border-radius: 3px;
+    width: 0.4em;
+    height: 0.4em;
+    margin: 4px;
+    background: var(--sixty);
+    box-shadow: 2px 2px 1px var(--dark) inset;
+}
+
+input:checked {
+    background: var(--dark);
+    border: 1px inset var(--ten);
+    box-shadow: 1px 1px 3px var(--dark) inset;
+}
+
+label:has(input:checked) {
+    color: var(--ten);
+}
+
