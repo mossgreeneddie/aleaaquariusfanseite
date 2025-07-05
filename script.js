@@ -205,6 +205,7 @@ var buchtitel1 = [
 	'Im Bannkreis',
 	'Die Wellen',
 	'Der Gesang',
+	'Der Stern',
     'Das Vermächtnis',
 ] 
 var buchtitel2 = [
@@ -217,6 +218,7 @@ var buchtitel2 = [
 	'des Schwurs',
 	'der Zeit',
 	'der Wale',
+	'des Schicksals',
     'der Meerkinder',
 ]
 var list;
