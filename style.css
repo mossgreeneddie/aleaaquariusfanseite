@@ -1,0 +1,407 @@
+:root{
+    --blue: #2a5789;
+    --dblue: #050b35;
+
+    --green: #69cf4f;
+    --lgreen: #d4f6bc;
+
+    --text: #242153;
+}
+
+@font-face {
+    font-family: LinLib;
+    src: url("https://file.garden/ZXYYlmMYuz15fq8m/fonts/linux_libertine/LinLibertine_R.ttf");
+}
+
+@font-face {
+    font-family: SuperGreatly;
+    src: url("https://file.garden/ZXYYlmMYuz15fq8m/fonts/Super%20Greatly.ttf");
+}
+
+@font-face {
+    font-family: curse;
+    src: url("https://file.garden/ZXYYlmMYuz15fq8m/fonts/cursive-sans/CursiveSans-Book.ttf");
+}
+ 
+* { 
+    scrollbar-width: thin;
+    scrollbar-color: var(--green) var(--dblue) ;
+    font-family: LinLib;
+}
+
+body {
+    overflow-x: hidden;
+    background-image: linear-gradient(0deg, var(--dblue) 0%, var(--blue) 50%, var(--lgreen) 100% );
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    color: var(--text);
+}
+
+.first {
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;	
+}
+
+.content {
+    margin: 0 auto;
+    width: 100%;
+    max-width: calc(1px * 600);
+    position: relative;
+    min-height: 100vh;
+}
+
+.content > div, .eins {
+    border-radius: 20px;
+    box-shadow: 
+                
+    /*var(--blue) 0 0 30px,*/
+    #fff 0 0 10px,
+    #fff 0 0 10px,
+    var(--green) 0 0 30px,
+    inset #fff 0 0 10px ;
+}
+
+img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0px;
+    padding-left: 10px;
+    font-family: SuperGreatly;
+    letter-spacing: 1px;
+}
+
+h2{
+    font-family: curse;
+}
+
+ul, li, p{
+    margin: 0px;
+    padding-left: 10px; 
+}
+
+ul{
+    list-style: none;
+}
+
+
+.link{
+    text-decoration: none;
+    border-bottom: var(--dblue) 1px solid ;
+    color: var(--blue);
+    padding: 1px 3px;
+    border-radius: 5px;
+    transition: all 0.2s;
+}
+
+.link:hover{
+    background-color: var(--dblue);
+    color: var(--lgreen);
+}
+
+.color{
+    background-color: #8a9a5b;
+    color: #fff;
+    padding: 1px 3px;
+    border-radius: 5px;
+}
+
+/*spesific styles*/
+
+/*Title*/
+
+.title{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 10px;
+    box-shadow: none !important;
+    margin-top: 40px;
+}
+
+.eins{
+    max-height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.eins img{
+    scale: 120%;
+    transition: all 1s;
+}
+
+.eins img:hover{
+    scale: 130%;
+}
+
+.title-text{
+    background-color:var(--lgreen);
+    min-width: fit-content;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 40px 5px;
+    box-shadow: 
+                
+    /*var(--blue) 0 0 30px,*/
+    
+    #fff 0 0 30px,
+    #fff 0 0 10px,
+    var(--green) 0 0 40px,
+    inset #fff 0 0 20px ;
+}
+
+.title-text > .main{
+    font-family: curse;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+.title-text > .sub{
+    font-family: monospace;
+    font-size: 20px;
+    letter-spacing: 0.5vw;
+}
+
+
+/*Timer*/
+
+.timer{
+    background-color:var(--lgreen);
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.timer-grid{
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 5px;
+}
+
+.timer-grid > div{
+    font-size: large;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+.timer-grid > div > p{
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*Fanart*/
+
+.fanart{
+    margin-bottom: 10px;
+    background-color:var(--lgreen);
+    padding: 10px;
+}
+
+.fanart-link{
+    background-image: url('https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/2025/1323.1.png');
+    background-size: cover;
+
+    height: 200px;
+    width: 100%;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fanart-link:hover{
+    opacity: 70%;
+}
+
+.fanart a{
+    text-decoration: none;
+    color: #fff !important;
+    text-shadow: 0 0 5px var(--lgreen), 0 0 15px var(--lgreen), 0 0 30px var(--green), 0 0 55px var(--green), 0 0 75px;
+    transition: all 0.5s;
+    margin-bottom: 10px;
+}
+
+.fanart:hover a{
+    text-shadow: 0 0 5px var(--lgreen), 0 0 10px var(--lgreen), 0 0 15px var(--lgreen), 0 0 20px var(--green), 0 0 30px var(--green), 0 0 40px var(--green), 0 0 55px var(--green), 0 0 75px var(--green);
+    transition: all 0.5s;
+}
+
+
+.fanart-gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.fanart-gallery img{
+    height: 200px;
+    padding: 0px 1px;
+}
+
+/*generators*/
+
+.generator{
+    margin-bottom: 10px;
+    background-color:var(--lgreen);
+    padding: 10px;
+}
+
+.generator-grid{
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 5px;
+}
+
+.generator-grid > div{
+    font-size: large;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    min-height: 300px;
+}
+
+.generator-grid > div > p{
+    margin: 0;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.generator-grid h4{
+    min-height: 50px;
+}
+
+.genbutton{
+    border: 3px solid var(--dblue);
+    border-radius: 5px;
+    padding: 1%;
+    background-color: var(--lgreen);
+    transition: all 0.5s;
+    margin: 5px;
+}
+
+.genbutton:hover{
+    background-color:  var(--dblue);
+    color: var(--lgreen);
+    user-select: none;
+}
+
+
+/*Fanfiction*/
+.fanfiction{
+    margin-bottom: 10px;
+    background-color:var(--lgreen);
+    padding: 10px;
+}
+
+.fanfiction-explain{
+    padding-bottom: 10px;
+}
+
+.fanfiction-container{
+    width: 100%;
+
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(4, 1fr);  
+
+    gap: 5px;
+}
+
+.fanfiction-container div{
+    scale: 100%;
+    transition: all 1s;
+
+}
+
+.fanfiction-container div:hover{
+    scale: 110%;
+    z-index: 10;
+}
+
+/*ABout me*/
+.about{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background-color:var(--lgreen);
+    padding: 10px;
+}
+
+.about-me{
+    padding-bottom: 10px;
+}
+
+.about-me{
+    display: grid;
+
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+.div1 { grid-area: 1 / 1 / 2 / 3; }
+.div2 { grid-area: 1 / 3 / 2 / 7; }
+.div3 { grid-area: 2 / 1 / 3 / 4; }
+.div4 { grid-area: 2 / 4 / 3 / 7; }
+.div5 { grid-area: 3 / 1 / 4 / 3; }
+.div6 { grid-area: 3 / 3 / 4 / 5; }
+.div7 { grid-area: 3 / 5 / 4 / 7; } 
+
+/* kredits*/
+
+.kredits{
+    padding-bottom: 10px;
+    background-color:var(--lgreen);
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+@media (max-width: 500px) {
+    .generator-grid, .fanfiction-container{
+        width: 100%;
+
+        display: grid;
+        grid-template-rows: repeat(auto-fit, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .about-me{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 5px;
+        grid-row-gap: 5px;
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 2 / 1 / 3 / 2; padding-left: 10px; }
+    .div3 { grid-area: 3 / 1 / 4 / 2; }
+    .div4 { grid-area: 4 / 1 / 5 / 2; }
+    .div5 { grid-area: 5 / 1 / 6 / 2; }
+    .div6 { grid-area: 6 / 1 / 7 / 2; } 
+
+    .sidebar, .body{
+        width: auto;
+    }
+}
