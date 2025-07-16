@@ -419,8 +419,10 @@ ul{
     .sidebar, .body{
         width: auto;
     }
+}
 
-    .deco-off{
+@media (max-width: 1000px) {
+    .deco-off, .deco-on{
         display: none;
     }
 }

@@ -4,11 +4,40 @@
     animation-iteration-count: infinite;
     animation-delay: 1s; 
     animation-fill-mode: none;
-    animation-timing-function: ease-in-out;
+    animation-timing-function: cubic-bezier(0.1, -0.6, 0.2, 0);
 }
 
 @keyframes fussel-sammy{
     0%   {rotate: -5deg;}
     50%  {rotate: 5deg;}
     100% {rotate: -5deg;}
+}
+
+.alea-animation{
+    animation-name: alea;
+    animation-duration: 3s; 
+    animation-iteration-count: infinite;
+    animation-delay: 1s; 
+    animation-fill-mode: none;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes alea{
+    0%   {rotate: -5deg;}
+    50%  {rotate: 5deg;}
+    100% {rotate: -5deg;}
+}
+
+.kobolt-animation{
+    animation-name: kobolt;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+    animation-delay: 1s; 
+    animation-fill-mode: none;
+    animation-timing-function: steps(2, end);
+}
+
+@keyframes kobolt{
+    0%   {rotate: -5deg;}
+    100% {rotate: 5deg;}
 }
