@@ -54,15 +54,8 @@ body {
     min-height: 100vh;
 }
 
-.content > div, .eins {
+.content > div {
     border-radius: 20px;
-    box-shadow: 
-                
-    /*var(--blue) 0 0 30px,*/
-    #fff 0 0 10px,
-    #fff 0 0 10px,
-    var(--green) 0 0 30px,
-    inset #fff 0 0 10px ;
 }
 
 img{
@@ -376,6 +369,28 @@ ul{
     margin-bottom: 40px;
 }
 
+/*dekoration images
+.deco-on{
+
+}*/
+
+.deco-off, .deco-on{
+    border-radius: 0px;
+    z-index: 50;
+}
+
+.deco-off{
+    z-index: 100;
+}
+
+.absolute{
+    position: absolute;
+}
+
+.relative{
+    position: relative;
+}
+
 
 @media (max-width: 500px) {
     .generator-grid, .fanfiction-container{
@@ -403,5 +418,9 @@ ul{
 
     .sidebar, .body{
         width: auto;
+    }
+
+    .deco-off{
+        display: none;
     }
 }

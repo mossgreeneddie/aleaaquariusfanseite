@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alpha Cru Fanseite</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animation.css">
 </head>
 <body>
+    
     <div class="first">
         <div class="content">
 
@@ -27,7 +29,8 @@
                 </div>
             </div>
 
-            <div class="fanart">
+            <div class="fanart relative">
+                <img width="200px" style="position: absolute; top: -100px; right: -100px; rotate: 10deg;" class="deco-on" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/sammy.png" alt="">
                     <a href="fanart"><div class="fanart-link eins"><h2>Zu meiner Fanart Gallerie</h2></div></a>
                 <div class="fanart-title"><h2>💚 Lieblingsbilder</h2></div>
                 <div class="fanart-gallery">
@@ -39,10 +42,11 @@
 
             <div class="generator">
                 <div class="generator-title"><h2>✨ (Spaßige) Generatoren</h2></div>
-                <div class="generator-grid">
+                <div class="generator-grid relative">
                     <div>
                         <h4>Click auf den Knopf "Generieren".</h4>
                         <p>Der JavaScript code ist von <a class="link" href="https://codepen.io/susier2016/pen/BKKywy">hier</a>.</p>
+                        <img width="350px" style="position: absolute; top: 120px; left: -160px;" class="deco-on" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/aleaswim.png" alt="">
                     </div>
                     <div>
                         <h4>Magischer Begleiter Generator</h4>
@@ -91,6 +95,7 @@
                         <h4>Buch Namen Generator</h4>
                         <div onclick="ranbuchname()" class="genbutton">Generieren</div>
                         <p class="genspace" id="büch">...</p>
+                        <img width="200px" style="position: absolute; bottom: -200px; right: -100px; z-index: 10;" class="deco-on" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/thea.png" alt="">
                     
                     </div>
                   
@@ -112,7 +117,8 @@
                 <p>Und noch ein paar andere, die ihr über <a class="link" href="https://archiveofourown.org/users/hex_8A9A5B">Ao3</a> oder <a class="link" href="https://www.wattpad.com/user/hex_8A9A5B">Wattpad</a> lesen könnt!</p>
             </div>
 
-            <div class="about">
+            <div class="about relative">
+                <img width="300px" style="position: absolute; top: 230px; left: -200px;" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/fussel.png" alt="">
                 <div class="about-title"><h2>🍃 Über mich</h2></div>
                 <div class="about-me">
                     <div class="div1"><img src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/ocs/1249.png" alt=""></div>
@@ -159,10 +165,15 @@
                 </div>
 
             </div>
+            <div class="relative">
+                <img width="200px" style="position: absolute; top: -230px; right: 0px;" class="deco-on" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/cass.png" alt="">
+                <img width="300px" style="position: absolute; top: 100px; right: -170px;" class="deco-on" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/kobolt.png" alt="">
+            </div>
 
             <div class="eins">
                 <img class="title-image" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/1128.png">
             </div>
+            
 
             <div class="kredits">
                 <div class="kredits-title"><h2>💌 Kredits und Kontakt</h2></div>
@@ -198,11 +209,14 @@
                             <li><a class="link" href="https://layout.bradwoods.io/">CSS Grid template 2</a></li>
                         </ul>
                     </div>
+                    
                 </div>            
             </div>
 
         </div>
+        <img width="500px" class="deco-off fussel-sammy-animation" style="position:fixed; top:30px; right:30px;" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/sammyfussel.png" alt="">
 
+        <img width="550px" class="deco-off" style="position:fixed; bottom:0px; left:0px;" src="https://file.garden/ZXYYlmMYuz15fq8m/Alea%20Aquarius%20Fanseite/png/evelinmio.png" alt="">
     </div>
     <script src="timer.js"></script>
     <script src="gen.js"></script>
