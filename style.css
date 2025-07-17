@@ -238,14 +238,27 @@ ul{
 
 .fanart-gallery{
     width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    height: max-content;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
 }
 
 .fanart-gallery img{
     height: 200px;
     padding: 0px 1px;
+}
+
+.fanart-gallery div{
+    scale: 100%;
+    transition: scale 1s;
+}
+
+.fanart-gallery div:hover{
+    scale: 150%;
+    z-index: 500 !important;
 }
 
 /*generators*/
@@ -336,7 +349,7 @@ ul{
 .about{
     margin-bottom: 10px;
     padding-bottom: 10px;
-    background-color:var(--lgreen);
+    background-color: var(--lgreen);
     padding: 10px;
 }
 
@@ -348,7 +361,7 @@ ul{
     display: grid;
 
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
     gap: 10px;
 }
 
